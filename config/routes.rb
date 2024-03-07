@@ -8,12 +8,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "lists#index"
 
-    get '/lists', to: 'lists#index'
-
     # get '/some_route', to: 'some_controller#some_action'
 
     # For listing all restaurants
     # get '/restaurants', to: 'restaurants#index'
+    get '/lists', to: 'lists#index'
 
     # For creating a new restaurant
     # post '/restaurants', to: 'restaurants#create'
@@ -26,6 +25,7 @@ Rails.application.routes.draw do
 
     # For displaying a specific restaurant
     # get '/restaurants/:id', to: 'restaurants#show'
+    get '/lists/:id', to: 'lists#show'
 
     # For updating a specific restaurant
     # patch '/restaurants/:id', to: 'restaurants#update'
