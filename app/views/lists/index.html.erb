@@ -1,5 +1,5 @@
 <marquee>
 <% @lists.each do |list| %>
-  <div><%= list.name %></div>
+  <p><%= link_to list.name, list_path(list) %></p>
 <% end %>
 </marquee>

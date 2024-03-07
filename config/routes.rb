@@ -5,31 +5,35 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  resources :lists
+  # resources :bookmarks
+  # resources :movies
+
   # Defines the root path route ("/")
   root "lists#index"
 
-    # get '/some_route', to: 'some_controller#some_action'
+  # get '/some_route', to: 'some_controller#some_action'
 
-    # For listing all restaurants
-    # get '/restaurants', to: 'restaurants#index'
-    get '/lists', to: 'lists#index'
+  # For listing all restaurants
+  # get '/restaurants', to: 'restaurants#index'
+  # get '/lists', to: 'lists#index'
 
-    # For creating a new restaurant
-    # post '/restaurants', to: 'restaurants#create'
+  # For creating a new restaurant
+  # post '/restaurants', to: 'restaurants#create'
 
-    # For rendering a form for creating a new restaurant
-    # get '/restaurants/new', to: 'restaurants#new'
+  # For rendering a form for creating a new restaurant
+  # get '/restaurants/new', to: 'restaurants#new'
 
-    # For rendering a form for editing an existing restaurant
-    # get '/restaurants/:id/edit', to: 'restaurants#edit'
+  # For rendering a form for editing an existing restaurant
+  # get '/restaurants/:id/edit', to: 'restaurants#edit'
 
-    # For displaying a specific restaurant
-    # get '/restaurants/:id', to: 'restaurants#show'
-    get '/lists/:id', to: 'lists#show'
+  # For displaying a specific restaurant
+  # get '/restaurants/:id', to: 'restaurants#show'
+  # get '/lists/:id', to: 'lists#show'
 
-    # For updating a specific restaurant
-    # patch '/restaurants/:id', to: 'restaurants#update'
+  # For updating a specific restaurant
+  # patch '/restaurants/:id', to: 'restaurants#update'
 
-    # For deleting a specific restaurant
-    # delete '/restaurants/:id', to: 'restaurants#destroy'
+  # For deleting a specific restaurant
+  # delete '/restaurants/:id', to: 'restaurants#destroy'
 end
