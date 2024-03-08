@@ -1,15 +1,10 @@
-<marquee>
+<c1-9>
 <% @lists.each do |list| %>
   <p><%= link_to list.name, list_path(list) %></p>
 <% end %>
-</marquee>
+</c1-9>
 <div>
   <!-- app/views/articles/index.html.erb -->
   <%= cl_image_tag("zr3wyc8bzn3dd0bmwo1n",
         width: 400, height: 300, crop: :fill) %>
-
-  <!-- for face detection -->
-  <%= cl_image_tag("beach-boat",
-        width: 150, height: 150, crop: :thumb, gravity: :face) %>
 </div>
-
