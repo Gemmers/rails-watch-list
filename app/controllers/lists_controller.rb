@@ -6,6 +6,10 @@ class ListsController < ApplicationController
   def show
     @list = List.find(params[:id])
   end
+
+  def home
+    # homepage
+  end
 end
 
 def list_params

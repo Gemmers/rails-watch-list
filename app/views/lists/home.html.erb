@@ -1,0 +1,30 @@
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="d-flex justify-content-center bg-primary rounded-top">
+      <marquee class="text text-white">Welcome on rails-watch-list homepage !</marquee>
+    </div>
+    <div class="col-2 bg-info rounded">
+      Just click on the picture to enter !
+    </div>
+    <div class="col-8 rounded d-flex justify-content-center bg-secondary py-3">
+      <%= link_to lists_path do %>
+        <%= cl_image_tag("zr3wyc8bzn3dd0bmwo1n", class: "img-fluid shadow", crop: :fill) %>
+      <% end %>
+
+    </div>
+    <div class="col-2 bg-info rounded">
+      Just tag the movies you watched, and then leave a comment.
+    </div>
+    <div class="footer">
+      <ul class="list-inline text-end">
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/sylvain-b-8396931b8" alt="Sylvain Bohrer on linkedin" target="_blank"><i class="fa-brands fa-linkedin" style="color:#7cc2f9"></i></a></li>
+        <li class="list-inline-item">This website was coded with <i class="fa-sharp fa-solid fa-heart" style="color:red"></i> at le Wagon</li>
+      </ul>
+  </div>
+  </div>
+
+</div>

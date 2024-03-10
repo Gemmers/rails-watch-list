@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # resources :movies
 
   # Defines the root path route ("/")
-  root "lists#index"
+  root to: 'lists#home'
 
   # get '/some_route', to: 'some_controller#some_action'
 
